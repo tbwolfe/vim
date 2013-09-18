@@ -48,11 +48,6 @@ set textwidth=0
 set formatoptions=qrn1
 set spell
 
-" Aesthetics
-
-" colorscheme solarized
-set background=light
-
 " Mappings and shortcuts
 
 " Basics
@@ -60,7 +55,9 @@ set background=light
 inoremap jk <ESC>
 let mapleader = ","
 
-" Arrows are unvimlike, but I will keep them for now.  :) 
+" Arrows are unvimlike 
+" Uncomment below to remove arrow key functionality.  I will keep this for now, 
+" and consider removing in the future.
 
 "nnoremap <up> <nop>
 "nnoremap <down> <nop>
@@ -82,19 +79,8 @@ vnoremap . :norm.<CR>
 
 " Leader shortcuts
 
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>a :Ack
-nnoremap <leader>ft Vatzf
-nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 nnoremap <leader>q gqip
-nnoremap <leader>v V`]
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
-nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>j VipJ
-nnoremap <leader>q gqip
-nnoremap <leader>f 1z=
-nnoremap <leader>s ]s
-nnoremap <leader>u :!git pull website master && git commit -am 'Standard commit.' && git push website master<CR><CR>
 nnoremap <leader>p :!git commit -am 'Standard commit.' && git push origin master<CR><CR>
 nnoremap <leader>d :read !date<CR>
 nnoremap <leader>r :!!<CR>

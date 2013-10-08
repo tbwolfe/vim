@@ -8,6 +8,13 @@ execute pathogen#infect()
 
 filetype plugin indent on
 syntax on
+
+" Adding solarized color scheme
+syntax enable
+set beckground=dark
+colorscheme solarized
+
+
 set shell=/bin/zsh
 set guifont=Menlo:h14
 set nocompatible

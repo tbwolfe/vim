@@ -59,7 +59,7 @@ set spell
 
 " Basics
 
-inoremap jk <ESC>
+inoremap kj <ESC>
 let mapleader = ","
 
 " Arrows are unvimlike 

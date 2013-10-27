@@ -11,7 +11,7 @@ syntax on
 
 " Adding solarized color scheme
 syntax enable
-set beckground=dark
+set background=dark
 colorscheme solarized
 
 
